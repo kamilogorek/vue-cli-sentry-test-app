@@ -2,6 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <button v-on:click="reverseMessage">Reverse Message</button>
   </div>
 </template>
 
@@ -12,6 +13,14 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  methods: {
+    reverseMessage: function() {
+      this.message = this.message
+        .split("")
+        .reverse()
+        .join("");
+    }
   }
 }
 </script>
