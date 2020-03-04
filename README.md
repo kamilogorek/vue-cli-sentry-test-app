@@ -1,24 +1,12 @@
-# vue-cli-test-app
+# vue-cli test app + sentry + sentry-webpack-plugin
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+0. Update `.sentryclirc`
+1. Update `main.js` with your DSN
+2. Make sure that release in `main.js` and `vue.config.js` match (they do already in this repo)
+3. Compile `yarn build`
+4. Run `npx serve dist/`
+5. Open your browser `http://localhost:5000`
+6. Click `Reverse Message` button
+7. Go to your project on https://sentry.io
+8. ?
+9. PROFIT
