@@ -1,0 +1,6 @@
+[auth]
+token=<YOUR_TOKEN>
+
+[defaults]
+org=<YOUR_ORG>
+project=<YOUR_PROJECT>

@@ -6,7 +6,8 @@ import * as Integrations from "@sentry/integrations";
 Vue.config.productionTip = false
 Sentry.init({
   dsn: "<YOUR_DSN>",
-  integrations: [new Integrations.Vue({ Vue, attachProps: true, logErrors: true })]
+  integrations: [new Integrations.Vue({ Vue, attachProps: true, logErrors: true })],
+  release: "foo"
 });
 
 
